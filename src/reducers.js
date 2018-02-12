@@ -5,8 +5,6 @@ const reducer = (state = {value: 0}, action) => {
     case 'RESET':
       return {value: 0}
     default:
-      return state
-  }
-}
+      return state}}
 
 export default reducer
