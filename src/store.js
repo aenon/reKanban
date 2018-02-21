@@ -1,9 +1,9 @@
 import { createStore } from 'redux'
-import reducer from './reducers'
+import reducer from './reducer'
 import { loadState, saveState } from './localStorage'
 
 // The default state of the app
-const defaultState = {value: 0}
+const defaultState = {}
 
 const state = loadState(defaultState)
 const store = createStore(reducer, state)
