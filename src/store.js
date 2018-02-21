@@ -5,8 +5,8 @@ import { loadState, saveState } from './localStorage'
 // The default state of the app
 const defaultState = {}
 
-const state = loadState(defaultState)
-const store = createStore(reducer, state)
+const initialState = loadState(defaultState)
+const store = createStore(reducer, initialState)
 store.subscribe(() => saveState(store.getState()))
 
 export default store
