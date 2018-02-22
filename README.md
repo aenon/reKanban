@@ -1,4 +1,4 @@
-# React Redux Starter
+# React Redux Kanban
 
 Simple and naive boilerplate for Redux / React app.
 

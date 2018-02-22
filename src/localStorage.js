@@ -1,6 +1,6 @@
 export const loadState = state => {
   try {
-    const serializedState = localStorage.getItem('counterState')
+    const serializedState = localStorage.getItem('kanbanState')
     if (serializedState === null) {
       return state}
     return JSON.parse(serializedState)
@@ -10,5 +10,5 @@ export const loadState = state => {
 export const saveState = state => {
   try {
     const serializedState = JSON.stringify(state)
-    localStorage.setItem('counterState', serializedState)
+    localStorage.setItem('kanbanState', serializedState)
   } catch (err) {}}

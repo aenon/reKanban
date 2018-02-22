@@ -1,11 +1,32 @@
-import { combineReducers } from "redux"
-
-const reducer = (state = {value: 0}, action) => {
+const defaultState = {
+  Winnie: [
+    "card here",
+    "another card"
+  ],
+  Bob: [
+    "card here",
+    "another card"
+  ],
+  Thomas: [
+    "card here",
+    "another card"
+  ],
+  George: [
+    "card here",
+    "another card"
+  ]
+}
+const reducer = (state = defaultState, action) => {
   switch (action.type) {
-    case 'INCREMENT':
-      return {value: state.value + action.value}
-    case 'RESET':
-      return {value: 0}
+    case 'ADD_CARD':
+      const columnName = action.columnName
+      const cardContent = action.cardContent
+      return {
+        ...state,
+        columnName: [
+          ...state.columnName, cardContent
+        ]
+      }
     default:
       return state
   }

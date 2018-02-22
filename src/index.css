@@ -1,4 +1,17 @@
-body {
+.Winnie {
+  background-color: 8E6E95;
+}
+
+.col-sm {
+    padding: 0px;
+    margin-right: 25px;
+}
+
+.App {
+    padding-left: 25px;
+}
+
+/* body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -13,4 +26,4 @@ body {
 .btn {
   margin-right: 10px;
   margin-bottom: 10px;
-}
+} */
